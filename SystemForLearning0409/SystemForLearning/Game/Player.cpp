@@ -395,6 +395,8 @@ void Player::update(void)
 	if (manager()->getPushed(ButtonItem::A))
 	{
 		PlayerBullet* bullet = manager()->createPlayerBullet();
+
+		//’e‚Ì‘¬“xAŠp“x•ÏX
 		bullet->setPosition(m_positionX + cMainShotOffsetX, m_positionY);
 		bullet->setDirection(1.0f, 0.0f);
 		bullet->setSpeed(5.0f);

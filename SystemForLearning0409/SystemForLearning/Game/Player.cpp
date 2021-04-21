@@ -399,7 +399,7 @@ void Player::update(void)
 		//弾の速度、角度変更
 		bullet->setPosition(m_positionX + cMainShotOffsetX, m_positionY);
 		bullet->setDirection(1.0f, 0.0f);
-		bullet->setSpeed(5.0f);
+		bullet->setSpeed(5.0f);		//マイナスにすると逆方向に動く
 		bullet->setDamage(m_shotDamage[static_cast<int>(ShotType::Normal)]);
 
 		core2d::SoundManager::instance()->startSe(GameSeId::Shot);
